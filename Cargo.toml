@@ -121,7 +121,7 @@ mime_guess = { version = "2.0", default-features = false, optional = true }
 encoding_rs = { version = "0.8", optional = true }
 http-body = "1"
 http-body-util = "0.1"
-hyper = { version = "1.1", features = ["http1", "client"] }
+hyper = { git = "https://github.com/Arcane-Secret/hyper.git", features = ["http1", "client"] }
 hyper-util = { version = "0.1.3", features = ["http1", "client", "client-legacy", "tokio"] }
 h2 = { version = "0.4", optional = true }
 once_cell = "1.18"
@@ -172,7 +172,7 @@ futures-channel = { version = "0.3", optional = true }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dev-dependencies]
 env_logger = "0.10"
-hyper = { version = "1.1.0", default-features = false, features = ["http1", "http2", "client", "server"] }
+hyper = { git = "https://github.com/Arcane-Secret/hyper.git", default-features = false, features = ["http1", "http2", "client", "server"] }
 hyper-util = { version = "0.1.3", features = ["http1", "http2", "client", "client-legacy", "server-auto", "tokio"] }
 serde = { version = "1.0", features = ["derive"] }
 libflate = "2.1"
