@@ -142,9 +142,9 @@ tokio-native-tls = { version = "0.3.0", optional = true }
 
 # rustls-tls
 hyper-rustls = { git = "https://github.com/Arcane-Secret/hyper-rustls.git", default-features = false, optional = true, features = ["http1", "tls12"] }
-rustls = { version = "=0.23.4", optional = true, default-features = false, features = ["std", "tls12"] }
+rustls = { version = "0.23.4", optional = true, default-features = false, features = ["std", "tls12"] }
 rustls-pki-types = { version = "1.1.0", features = ["alloc"] ,optional = true }
-tokio-rustls = { version = "=0.26", optional = true, default-features = false, features = ["tls12"] }
+tokio-rustls = { version = "0.26", optional = true, default-features = false, features = ["tls12"] }
 webpki-roots = { version = "0.26.0", optional = true }
 rustls-native-certs = { version = "0.8.0", optional = true }
 
